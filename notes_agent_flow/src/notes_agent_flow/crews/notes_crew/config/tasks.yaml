@@ -1,0 +1,23 @@
+notes_task:
+  description: >
+    Extract the most important formulae and concepts from the provided PDF on {topic}.
+    Ensure the extracted content is relevant and concise.
+  expected_output: >
+    A list of the most important formulae and concepts on {topic} extracted from the PDF.
+  agent: notes_agent
+
+notes_correction_task:
+  description: >
+    Correct the extracted formulae and concepts from the PDF to ensure they are relevant and concise.
+    Provide additional description on what they mean.
+  expected_output: >
+    A list of corrected formulae and concepts on {topic} with additional descriptions.
+  agent: notes_correction_agent
+
+notes_write_task:
+  description: >
+    Write a cheat sheet in markdown format with the most important formulae and concepts on the given topic: {topic} obtained from the previous task, structuring them into two sections: formulae, concepts.
+    Save it to a file named {topic}.md.
+  expected_output: >
+    A markdown file named {topic}.md containing the cheat sheet with the most important formulae and concepts on {topic}.
+  agent: notes_write_agent
