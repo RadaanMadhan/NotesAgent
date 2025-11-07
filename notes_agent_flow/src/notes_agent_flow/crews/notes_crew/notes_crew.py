@@ -24,7 +24,7 @@ class NotesCrew:
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
 
-    knowledge_path = "C:/Users/Radaa/Desktop/Code/NotesAgent/knowledge"
+    knowledge_path = "knowledge"
 
     pdf_files = glob.glob(os.path.join(knowledge_path, "*.pdf"))
     pdf_filenames = [os.path.basename(f) for f in pdf_files]

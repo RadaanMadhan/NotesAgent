@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 from crewai.flow import Flow, listen, start
 
-from crews.notes_crew.notes_crew import NotesCrew
+from .crews.notes_crew.notes_crew import NotesCrew
 
 
 class NotesState(BaseModel):
